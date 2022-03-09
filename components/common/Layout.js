@@ -38,6 +38,8 @@ function Layout(props) {
     page.seo.metaDescription = dynamicPageItem.seo.metaDescription;
   }
 
+  console.log('Is Preview: ', isPreview)
+
   return (
     <>
       <SEO
