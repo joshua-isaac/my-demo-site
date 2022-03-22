@@ -25,7 +25,7 @@ module.exports = {
       const source = redirect.originUrl.replace("~", "");
       const destination = redirect.destinationUrl.replace("~", "");
 
-      if (redirect.statusCode === 301) {
+      if (redirect.statusCode === 301 || 308) {
         permanent = true;
       } else {
         permanent = false;
