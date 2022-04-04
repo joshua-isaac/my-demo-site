@@ -8,7 +8,7 @@ const Gallery = ({ module }) => {
 
     useEffect(() => {
         const init = async () => {
-            const data = await fetch(`/api/gallery?id=${module.fields.gallery.galleryid}`, {
+            const data = await fetch(`/api/gallery?id=${module.fields.gallery.galleryid || module.fields.gallery.galleryID}`, {
                 method: 'GET',
             })
             const res = await data.json()
