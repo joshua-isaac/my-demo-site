@@ -19,7 +19,7 @@ const Gallery = ({ module }) => {
 
     return (
         <div className="gallery">
-            {gallery.length > 0 && gallery.map((img, i) => {
+            {gallery?.length > 0 && gallery?.map((img, i) => {
                 return (
                     <div key={i} className="gallery__item">
                         <img src={img.url} alt={img.fileName} className="block w-64 h-64 object-cover" />
