@@ -11,8 +11,6 @@ export async function getStaticProps ({
   //pass the 404 path into our getStaticProps function from the slug
   const params = { slug: [ '404' ] }
 
-  console.log('params', params)
-
   return getSlugStaticProps({
     preview,
     params,

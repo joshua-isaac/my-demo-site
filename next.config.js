@@ -17,8 +17,6 @@ module.exports = {
   async redirects() {
     const { items } = await getRedirects();
 
-    console.log(items)
-
     const redirects = items.map((redirect) => {
       let permanent;
 
