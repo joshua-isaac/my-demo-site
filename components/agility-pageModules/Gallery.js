@@ -4,6 +4,8 @@ const Gallery = ({ module }) => {
 
     const [gallery, setGallery] = useState([])
 
+    console.log(module)
+
     useEffect(() => {
         const init = async () => {
             const data = await fetch(`/api/gallery?id=${module.fields.gallery.galleryid}`, {
