@@ -9,7 +9,6 @@ import agility from "@agility/content-fetch"
 export default async (req, res) => {
  // get gallery id
  const id = req.query.id
- console.log(id)
 
  if (!id) {
    res
@@ -20,8 +19,6 @@ export default async (req, res) => {
  }
 
  try {
-    //  console.log('try')
-    // fetch gallery
     const gallery = await api.getGallery({
      galleryID: id,
    })

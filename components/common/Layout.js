@@ -12,6 +12,7 @@ import LoadingWidget from "./LoadingWidget";
 const isPreview = handlePreview();
 
 function Layout(props) {
+
   const {
     page,
     sitemapNode,
@@ -23,6 +24,7 @@ function Layout(props) {
   // If the page is not yet generated, this will be displayed
   // initially until getStaticProps() finishes running
   const router = useRouter();
+
   if (router.isFallback) {
     return <LoadingWidget message="Loading Page" />;
   }
